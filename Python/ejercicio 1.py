@@ -8,7 +8,7 @@ print(f"Perfecto {usuario}, usted está registrado")
 i = 1
 
 while i == 1:
-    print(f"Por favor seguridad, vuelva a ingresar sus credenciales, {usuario} ")
+    print(f"Por temas de seguridad, por favor vuelva a ingresar sus credenciales, {usuario} ")
     user=input(" Ingrese su nombre de usuario: ")
     if usuario == user:
         print ("Usuario correcto")
