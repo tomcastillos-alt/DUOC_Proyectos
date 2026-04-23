@@ -5,9 +5,9 @@ while True:
     rut = input("Ingrese su RUT (sin puntos ni guion, ej: 12345678k): ").lower()
 
     if len(rut) >= 8 and len(rut) <= 9:
-        digitoverifidor = rut[-1]
+        verificador = rut[-1]
 
-    if digitoverifidor.isdigit() or digitoverifidor == 'k':
+    if verificador.isdigit() or verificador == 'k':
         print("Rut válido.")
     else: 
         print("Rut inválido. Intente nuevamente.")
