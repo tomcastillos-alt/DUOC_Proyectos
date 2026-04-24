@@ -3,7 +3,6 @@ print("Bienvenido a la interfaz de Cajeros Automáticos de Banco Santander")
 while True:
     
     rut = input("Ingrese su RUT (sin puntos ni guion, ej: 12345678k): ").lower()
-    str(rut)
 
     if len(rut) >= 8 and len(rut) <= 9:
         digitover = rut[-1]
