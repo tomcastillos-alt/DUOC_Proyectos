@@ -61,3 +61,4 @@ print(f"descuento: {descuento}")
 print(f"porcentaje de descuento: {porcentaje}")
 
 ######################
+El error estaba en la matemática. Imprimía el descuento, no el monto con el descuento
