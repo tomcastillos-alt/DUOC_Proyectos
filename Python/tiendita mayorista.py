@@ -131,17 +131,16 @@ while True:
         continue
 
 while True:
-      rut = input("Ingresa tu rut sin el codigo verificador para acumular puntos: ")
+      rut = input("Ingresa tu rut sin el codigo verificador para acumular puntos: ").strip()
 
       if rut.isdigit() and len(rut) ==8:
-        print("Error: Rut válido")
         break
       else:
         print("Error: Rut inválido")
         continue
 
 while True:
-      dv = input("Ahora ingresa tu codigo verificador: ").upper()
+      dv = input("Ahora ingresa tu codigo verificador: ").upper().strip()
       if len(dv) == 1 and (dv.isdigit() or dv == 'K'):
         break
       else:
