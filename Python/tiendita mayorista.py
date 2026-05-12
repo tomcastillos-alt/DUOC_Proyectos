@@ -131,20 +131,28 @@ while True:
         continue
 
 while True:
-      rut = input("Ingresa tu rut sin el codigo verificador para acumular puntos: ").strip()
+      try:
+        rut = input("Ingresa tu rut sin el codigo verificador para acumular puntos: ").strip()
 
-      if rut.isdigit() and len(rut) ==8:
-        break
-      else:
-        print("Error: Rut inválido")
+        if rut.isdigit() and len(rut) ==8:
+            break
+        else:
+            print("Error: Rut inválido")
+            continue
+        except ValueError:
+        print("Error: Ingrese un número válido para el rut.")
         continue
 
 while True:
-      dv = input("Ahora ingresa tu codigo verificador: ").upper().strip()
-      if len(dv) == 1 and (dv.isdigit() or dv == 'K'):
-        break
-      else:
-        print("Error: DV inválido")
+     try:   
+        dv = input("Ahora ingresa tu codigo verificador: ").upper().strip()
+        if len(dv) == 1 and (dv.isdigit() or dv == 'K'):
+            break
+        else:
+            print("Error: DV inválido")
+            continue
+    except ValueError:
+        print("Error: Ingrese un número válido para el Digito Verificador.")
         continue
 
 boleta = f"Boleta de compra\nNombre: {nombre}\nCorreo: {correo}\nProducto: {opcion}\nCantidad: {cantidad}\nPrecio total con descuento: ${precio_con_descuento:.2f}"
