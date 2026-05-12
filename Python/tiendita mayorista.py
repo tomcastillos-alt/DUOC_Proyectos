@@ -148,6 +148,6 @@ while True:
         print("Error: DV inválido")
         continue
 
-boleta = "Boleta de compra\nNombre: {nombre}\nCorreo: {correo}\nProducto: {opcion}\nCantidad: {cantidad}\nPrecio total con descuento: ${precio_con_descuento:.2f}"
+boleta = f"Boleta de compra\nNombre: {nombre}\nCorreo: {correo}\nProducto: {opcion}\nCantidad: {cantidad}\nPrecio total con descuento: ${precio_con_descuento:.2f}"
 print("\n" + boleta)
 print("Gracias por su compra en la Panaderia Mayorista del Gato Guaton. ¡Vuelva pronto!")
