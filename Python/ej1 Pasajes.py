@@ -4,6 +4,7 @@ emisiontarjeta= 5000
 print("Bienvenido al sistema de calculo de pasajes de Latam Air")
 print("La tarifa base del pasaje es de $95.000, y el costo de emisión de la tarjeta de embarque es de $5.000.")
 print("Descuentos: Distancia igual o mayor a 400km 20% dcto / Distancia menor a 400km 14% dcto")
+print("El valor final corresponde al coste mensual de los pasajes"=
 
         
 try:
