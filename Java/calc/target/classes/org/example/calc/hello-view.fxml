@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="298.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.calc.HelloController">
+   <children>
+      <HBox layoutX="109.0" layoutY="192.0" prefHeight="47.0" prefWidth="380.0">
+         <children>
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <Button fx:id="sumButton" mnemonicParsing="false" onAction="#onSum" prefHeight="26.0" prefWidth="130.0" text="Suma" />
+               </children>
+            </VBox>
+            <VBox prefHeight="58.0" prefWidth="95.0">
+               <children>
+                  <Button fx:id="restButton" mnemonicParsing="false" onAction="#onRes" prefHeight="26.0" prefWidth="108.0" text="Resta" />
+               </children>
+            </VBox>
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <Button fx:id="multButton" mnemonicParsing="false" onAction="#onMult" prefHeight="26.0" prefWidth="118.0" text="Multiplicación" />
+               </children>
+            </VBox>
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <Button fx:id="divButton" mnemonicParsing="false" onAction="#onDiv" prefHeight="26.0" prefWidth="114.0" text="División" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <HBox layoutX="20.0" layoutY="70.0" prefHeight="56.0" prefWidth="560.0">
+         <children>
+            <Label text="Ingrese el primer número: " />
+            <TextField fx:id="campoPriNum" prefHeight="26.0" prefWidth="206.0" />
+         </children>
+      </HBox>
+      <HBox layoutX="20.0" layoutY="136.0" prefHeight="56.0" prefWidth="560.0">
+         <children>
+            <Label text="Ingrese el segundo número: " />
+            <TextField fx:id="campoSegNum" prefHeight="26.0" prefWidth="194.0" />
+         </children>
+      </HBox>
+      <Label layoutX="240.0" layoutY="14.0" text="¡SUPER CALCUADORA" />
+      <Label layoutX="163.0" layoutY="239.0" text="resultado: " />
+      <TextArea fx:id="resultado" layoutX="227.0" layoutY="227.0" prefHeight="41.0" prefWidth="118.0" />
+   </children>
+</AnchorPane>
