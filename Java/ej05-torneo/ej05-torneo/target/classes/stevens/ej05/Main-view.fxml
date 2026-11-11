@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="640.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="stevens.ej05.controllers.MainController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0e3b65" height="69.0" layoutX="1.0" stroke="BLACK" strokeType="INSIDE" width="1029.0" />
+      <Label layoutX="20.0" layoutY="20.0" style="-fx-font-size: 18px; -fx-font-weight: bold;" text="Torneo de videojuegos" textFill="WHITE" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f0f8ff" height="528.0" layoutX="1.0" layoutY="69.0" stroke="BLACK" strokeType="INSIDE" width="453.0" />
+      <Label layoutX="14.0" layoutY="81.0" text="Nuevo participante">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="22.0" layoutY="161.0" text="Nombre" />
+      <TextField fx:id="txtNombre" layoutX="20.0" layoutY="178.0" prefHeight="25.0" prefWidth="413.0" promptText="iingresa el nombre" />
+      <ComboBox fx:id="cmbTipo" layoutX="20.0" layoutY="123.0" prefHeight="25.0" prefWidth="413.0" promptText="selecciona el tipo" />
+      <Label layoutX="20.0" layoutY="106.0" text="Tipo" />
+      <Label layoutX="22.0" layoutY="215.0" text="Equipo" />
+      <TextField fx:id="colEquipo" layoutX="21.0" layoutY="232.0" prefHeight="25.0" prefWidth="413.0" promptText="ingresa el nombre del equipo" />
+      <Label layoutX="22.0" layoutY="270.0" text="Edad" />
+      <TextField fx:id="colEdad" layoutX="21.0" layoutY="287.0" prefHeight="25.0" prefWidth="413.0" promptText="iingresa el edad" />
+      <Label layoutX="159.0" layoutY="325.0" text="Datos especifico" />
+      <Label layoutX="22.0" layoutY="349.0" text="nick" />
+      <TextField fx:id="txtNick" layoutX="20.0" layoutY="366.0" prefHeight="25.0" prefWidth="171.0" promptText="el nickname" />
+      <Label layoutX="257.0" layoutY="349.0" text="Rol" />
+      <TextField fx:id="txtRol" layoutX="257.0" layoutY="366.0" prefHeight="25.0" prefWidth="171.0" promptText="ingresa el rol" />
+      <Label layoutX="21.0" layoutY="397.0" text="Partidos " />
+      <TextField fx:id="txtPartidos" layoutX="20.0" layoutY="414.0" prefHeight="25.0" prefWidth="171.0" />
+      <Label layoutX="26.0" layoutY="452.0" text="Especialidad" />
+      <TextField fx:id="txtEspecialidad" layoutX="20.0" layoutY="469.0" prefHeight="25.0" prefWidth="171.0" />
+      <Label layoutX="257.0" layoutY="452.0" text="años" />
+      <TextField fx:id="txtAnios" layoutX="246.0" layoutY="469.0" prefHeight="25.0" prefWidth="171.0" />
+      <TableView layoutX="454.0" layoutY="70.0" prefHeight="528.0" prefWidth="575.0">
+        <columns>
+          <TableColumn fx:id="colTipo" prefWidth="75.0" text="Tipo" />
+          <TableColumn fx:id="colNombre" prefWidth="75.0" text="Nombre" />
+            <TableColumn fx:id="colEquipo" prefWidth="75.0" text="Equipo" />
+            <TableColumn fx:id="colEdad" prefWidth="75.0" text="Edad" />
+            <TableColumn fx:id="colDatosEspecificos" prefWidth="179.0" text="Datos especifico" />
+            <TableColumn fx:id="colPuntaje" prefWidth="93.0" text="Puntajes" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
