@@ -1,0 +1,10 @@
+[
+  {
+    "evaluacionFinalDia": true,
+    "entidadCertificadora": "SENCE",
+    "diplomaEmitido": true,
+    "codigoCurso": "Prueba",
+    "duracionHoras": 30,
+    "cupoMaximo": 2
+  }
+]
